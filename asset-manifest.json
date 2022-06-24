@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "./static/css/main.8c92c062.css",
-    "main.js": "./static/js/main.ddacd714.js",
+    "main.css": "./static/css/main.64ec96ed.css",
+    "main.js": "./static/js/main.c9e048c9.js",
     "static/js/787.90c2f3c2.chunk.js": "./static/js/787.90c2f3c2.chunk.js",
     "static/media/cruella.jpg": "./static/media/cruella.1640d9bf13214c14bdb7.jpg",
     "static/media/babydriver.jpg": "./static/media/babydriver.c0e842f399531ba60e19.jpg",
@@ -31,17 +31,14 @@
     "static/media/hbo.png": "./static/media/hbo.c9f3399170def6d43544.png",
     "static/media/olddogs.jpg": "./static/media/olddogs.a86e50b519ddfc70c468.jpg",
     "static/media/netflix.png": "./static/media/netflix.e8e19bebd86a76e39963.png",
-    "static/media/slick.svg": "./static/media/slick.2630a3e3eab21c607e21.svg",
-    "static/media/slick.eot": "./static/media/slick.a4e97f5a2a64f0ab1323.eot",
-    "static/media/slick.ttf": "./static/media/slick.c94f7671dcc99dce43e2.ttf",
-    "static/media/slick.woff": "./static/media/slick.295183786cd8a1389865.woff",
+    "static/media/checked.png": "./static/media/checked.6f298cca57a5a8b36055.png",
     "index.html": "./index.html",
-    "main.8c92c062.css.map": "./static/css/main.8c92c062.css.map",
-    "main.ddacd714.js.map": "./static/js/main.ddacd714.js.map",
+    "main.64ec96ed.css.map": "./static/css/main.64ec96ed.css.map",
+    "main.c9e048c9.js.map": "./static/js/main.c9e048c9.js.map",
     "787.90c2f3c2.chunk.js.map": "./static/js/787.90c2f3c2.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.8c92c062.css",
-    "static/js/main.ddacd714.js"
+    "static/css/main.64ec96ed.css",
+    "static/js/main.c9e048c9.js"
   ]
 }
