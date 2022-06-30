@@ -1,0 +1,11 @@
+.owl-nav {
+  display: flex;
+  justify-content: space-around;
+  button.owl-next,
+  button.owl-prev {
+    span.next,
+    span.prev {
+      font-size: 1.3em;
+    }
+  }
+}

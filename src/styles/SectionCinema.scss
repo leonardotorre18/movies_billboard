@@ -1,0 +1,10 @@
+section.cinema {
+    width: 100%;
+    padding: 2.5em;
+    img.logo {
+        max-width: 300px;
+        @media (max-width: 768px) {
+            width: 80%;
+        }
+    }
+}
