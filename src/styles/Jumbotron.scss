@@ -1,6 +1,6 @@
 .Jumbotron {
   width: 100%;
-  height: 100%;
+  height: 600px;
   position: relative;
   @media (max-width: 576px) and (orientation: portrait) {
     height: 400px
@@ -8,13 +8,22 @@
   @media (max-height: 576px) and (orientation: landscape) {
     height: 100vh;
   }
-  img{
+  @media (min-width: 1200px) and (orientation: landscape) {
+    height: 100vh;
+  }
+
+  .img {
+    position: absolute;
     width: 100%;
     height: 100%;
-    object-fit: cover;
+    z-index: -1;
+    img{
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
   }
   .description {
-    position: absolute;
     top:0;
     left: 0;
     width: 100%;
@@ -24,7 +33,7 @@
     align-items: flex-start;
     flex-direction: column;
     background-image: linear-gradient(to top, #000, #00000000);
-    padding: 2em;
+    padding: 5vw;
     h2.title {
       font-size: 3em;
       font-weight: 400;

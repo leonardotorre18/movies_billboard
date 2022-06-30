@@ -4,7 +4,10 @@ import Image from '../../assets/img/your-name.jpg';
 export default function Jumbotron() {
   return (
     <div className='Jumbotron'>
-      <img src={Image} alt="Your Name Poster" />
+      <div className="img">
+        <img src={Image} alt="Your Name Poster" />
+
+      </div>
       <div className="description">
         <h2 className="title">
           Your Name
