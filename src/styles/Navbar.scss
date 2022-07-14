@@ -1,0 +1,30 @@
+header.header {
+  position: fixed;
+  left: 0;
+  z-index: 10;
+  background-color: rgb(34, 34, 34);
+  width: 100%;
+  height: 50px;
+  padding: 0 10px;
+  transition: top .6s linear;
+  ul.list {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    list-style: none;
+    justify-content: flex-end;
+    align-items: center;
+
+    li {
+      width: max-content;
+      margin: 0 10px;
+    }
+  }
+
+  &.show {
+    top: 0
+  }
+  &.hidden {
+    top: -50px
+  }
+}

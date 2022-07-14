@@ -1,7 +1,15 @@
 import '../../styles/Jumbotron.scss';
-import Image from '../../assets/img/your-name.jpg';
+import Image from '../../assets/img/yourname_jumbotron.jpg';
+
+import { getMovie } from '../../services/movies';
+import { useEffect, useState } from 'react';
 
 export default function Jumbotron() {
+  const [movie, setMovie] = useState({})
+  useEffect(()=> {
+    getMovie(14).then(res=> setMovie(res.data[0]))
+  },[])
+
   return (
     <div className='Jumbotron'>
       <div className="img">
@@ -10,9 +18,9 @@ export default function Jumbotron() {
       </div>
       <div className="description">
         <h2 className="title">
-          Your Name
+          {movie.title}
         </h2>
-        <p className="time">1h 52min</p>
+        <p className="time">{movie.duration}</p>
         <button 
           className='button' 
           onClick={()=>{

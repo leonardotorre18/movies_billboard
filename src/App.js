@@ -6,13 +6,32 @@ import netflixImg from './assets/img/logo/netflix.png';
 import hboImg from './assets/img/logo/hbo.png'
 import disneyImg from './assets/img/logo/disney.png';
 
-import { netflixList, hboList, disneyList } from './utils/MoviesList'
+import { getNetflixMovies, getHboMovies, getDisneyMovies } from './services/movies';
+import { useEffect, useState } from 'react';
 
-
+import Navbar from './components/layout/Navbar';
 
 function App() {
+  const [netflixList, setNetflixList] = useState([])
+  const [hboList, setHboList] = useState([])
+  const [disneyList, setDisneyList] = useState([])
+
+  useEffect(()=> {
+
+    getNetflixMovies()
+      .then(data=> setNetflixList(data.data))
+
+    getHboMovies()
+      .then(data => setHboList(data.data))
+
+    getDisneyMovies() 
+      .then(data => setDisneyList(data.data))
+  },[])
+
+
   return (
     <div className="App">
+      <Navbar />
       <Jumbotron />
       <SectionCinema
         logo={netflixImg}
