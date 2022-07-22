@@ -4,15 +4,10 @@ import 'owl.carousel/dist/assets/owl.theme.default.min.css';
 
 import '../../styles/Carousel.scss'
 
-import propTypes from 'prop-types'
-
-import CardMovie from "../pure/CardMovie";
-
-
-const Carousel = ({movies, autoplayTimeout}) => {
-    return(
-        <div>
-        <OwlCarousel
+const Carousel = ({ autoplayTimeout, children }) => {
+  return(
+    <div>
+      <OwlCarousel
         margin={10}
         loop={true}
         nav={true}
@@ -31,23 +26,13 @@ const Carousel = ({movies, autoplayTimeout}) => {
           1200: { items: 5 }
         }}
         lazyLoad={true}
-        >
-        {
-          movies.map((movie,i)=>{
-            return <CardMovie
-            key={i}
-            movie={movie}
-            ></CardMovie>
-          })
-        }
-        </OwlCarousel>
-      </div>
-    )
+      >
+        
+      {children}
 
-}
-
-Carousel.propTypes = {
-  movies: propTypes.array.isRequired
+      </OwlCarousel>
+    </div>
+  )
 }
 
 export default Carousel;

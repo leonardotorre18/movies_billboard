@@ -1,10 +1,16 @@
 import Axios from 'axios'
 
-export const UrlBase = 'https://leonardoapi.herokuapp.com'
+const urlBase = 'https://leonardoapi.herokuapp.com'
 
-export const getAllMovies = () => Axios.get(UrlBase + "/movies");
-export const getMovie = id => Axios.get(UrlBase + "/movies/id/" + id);
-export const getNetflixMovies = () => Axios.get(UrlBase + "/movies/netflix");
-export const getHboMovies = () => Axios.get(UrlBase + "/movies/hbo");
-export const getDisneyMovies = () => Axios.get(UrlBase + "/movies/disney");
-
+export const getAllMovies = () => {
+  return Axios(urlBase + '/movies')
+}
+export const getNetflixMovies = () => {
+  return Axios(urlBase + '/movies/netflix')
+}
+export const getHboMovies = () => {
+  return Axios(urlBase + '/movies/hbo')
+}
+export const getDisneyMovies = () => {
+  return Axios(urlBase + '/movies/disney')
+}

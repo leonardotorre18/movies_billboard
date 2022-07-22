@@ -1,0 +1,12 @@
+.view {
+  width: 100%;
+  text-align: center;
+  min-height: 100vh;
+
+  img.logo {
+    max-width: 600px;
+    @media (max-width: 768px) {
+      width: 80%;
+    }
+  }
+}

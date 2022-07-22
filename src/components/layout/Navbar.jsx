@@ -1,6 +1,8 @@
 import React from 'react';
 import { useState, useEffect } from 'react';
+import { Link } from 'react-router-dom';
 import '../../styles/Navbar.scss';
+import imgLogo from '../../assets/img/logo/Second_Logo.png'
 
 export default function Navbar() {
   const [show, setShow ] = useState(true)
@@ -24,11 +26,17 @@ export default function Navbar() {
 
   return (
     <header className={show ? 'header show' : 'header hidden'}>
-      <ul className="list">
-        <li>Netflix</li>
-        <li>HBO</li>
-        <li>Disney</li>
-      </ul>
+      <nav className="nav">
+        <div className="logo">
+          <img src={imgLogo} alt="Logo" />
+        </div>
+        <ul className="list">
+          <li><Link to={'/'}>Home</Link></li>
+          <li><Link to={'/netflix'}>Netflix</Link></li>
+          <li><Link to={'/hbo'}>HBO</Link></li>
+          <li><Link to={'/disney'}>Disney</Link></li>
+        </ul>
+      </nav>
     </header>
   )
 }

@@ -1,53 +1,20 @@
 .cardMovie {
   width: 100%;
-  height: 500px;
-  @media (max-width: 576px) {
-    height: 400px;
-  }
-  @media (orientation: landscape) and (max-height: 576px) {
-    height: 100vh;
-  }
-  border-radius: 5px;
-  overflow: hidden;
-  position: relative;
-  background-color: #212529;
-  img.viewedIcon {
-    position: absolute;
-    width: 50px;
-    height: 50px;
-    filter: drop-shadow(0px 0px 20px green);
-    top: 0;
-    right: 0;
-    z-index: 1;
-  }
-
-  img.imgFront {
-    height: 100%;
-    object-fit: cover;
-    transition: all .3s ease;
-    &:hover {
-      opacity: .6;
-      transform: scale(1.1);
-    }
-  }
-  .description {
+  height: 100%;
+  background-color: #000;
+  .img {
     width: 100%;
-    background-image: linear-gradient(to top, #000, rgba(0, 0, 0, 0.8), #00000000);
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    padding: .8em;
-    height: 30%;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-    h3.title {
-      padding-bottom: .5em;
-      font-weight: 400;
-      letter-spacing: 1px;
+    height: 100%;
+    overflow: hidden;
+    img{
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: all .5s ease;
     }
-    // p.tags {
-
-    // }
+    &:hover img {
+      transform: scale(1.2);
+      opacity: .7;
+    }
   }
 }
