@@ -1,7 +1,9 @@
 .view {
-  width: 100%;
+  width: 100vw;
+  overflow-x: hidden;
   text-align: center;
-  min-height: 100vh;
+  min-height: calc(100vh - 80px);
+  padding-bottom: 1.7em;
 
   img.logo {
     max-width: 600px;

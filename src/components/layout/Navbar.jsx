@@ -12,7 +12,7 @@ export default function Navbar() {
     if ((document.body.getBoundingClientRect()).top > scrollPos){
      setShow(true)
     } else { 
-      if (scrollPos <= -50) setShow(false)
+      if (scrollPos <= -80) setShow(false)
     }
     scrollPos = (document.body.getBoundingClientRect()).top;
   }

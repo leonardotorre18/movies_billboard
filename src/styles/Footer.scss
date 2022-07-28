@@ -1,0 +1,14 @@
+footer.footer {
+  background-color: #160812;
+  padding: 1em;
+  font-family: 'Square Peg', cursive;
+  p.param {
+    font-size: 2em;
+    line-height: 1em;
+  }
+  span.author, span.from {
+    display: block;
+    font-size: 1.8em;
+    text-align: right;
+  }
+}

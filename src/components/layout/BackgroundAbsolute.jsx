@@ -6,7 +6,7 @@ export default function BackgroundAbsolute({ background }) {
     <div 
       className='backgroundAbsolute'
       style={{
-        'backgroundImage': background
+        'background': background
       }}
     />
   )

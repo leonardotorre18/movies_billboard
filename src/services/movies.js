@@ -14,3 +14,7 @@ export const getHboMovies = () => {
 export const getDisneyMovies = () => {
   return Axios(urlBase + '/movies/disney')
 }
+
+export const getMovieForID = (id) => {
+  return Axios(urlBase + '/movies/id/' + id)
+}
