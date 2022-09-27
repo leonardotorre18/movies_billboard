@@ -16,8 +16,8 @@ export default function Jumbotron() {
         <button 
           className='button' 
           onClick={()=>{
-            const message = 'Holiiiiis, quiero ver Your Name y nada me haría más feliz que verla contigo, qué día podemos?'
-            window.open("https://api.whatsapp.com/send?phone=+584125077183&text=" + message);
+            const message = ''
+            window.open("" + message);
           }}
         >Reservar Acompañante</button>
       </div>
